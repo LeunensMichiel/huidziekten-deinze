@@ -1,1 +1,1 @@
-# huidziekten-deinze
+# huidziekten deinze
