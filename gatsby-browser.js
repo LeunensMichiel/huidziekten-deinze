@@ -20,7 +20,7 @@ const GlobalStyles = css`
   }
 
   body {
-    font-family: ${huidziektenTheme.fonts.heading};
+    font-family: ${huidziektenTheme.fonts.body};
     line-height: ${huidziektenTheme.lineHeights.heading};
     background: ${huidziektenTheme.colors.white};
     color: ${huidziektenTheme.colors.black};
