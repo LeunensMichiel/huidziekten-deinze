@@ -32,7 +32,7 @@ const GlobalStyles = css`
     flex-direction: column;
   }
   h1 {
-    font-size: ${huidziektenTheme.fontSizes[4]};
+    font-size: ${huidziektenTheme.fontSizes[5]};
   }
 
   p {
@@ -47,6 +47,7 @@ const GlobalStyles = css`
     text-decoration: none;
     &.active {
       color: ${huidziektenTheme.colors.accentRich};
+      font-weight: 700;
     }
     &:hover {
       color: ${huidziektenTheme.colors.accent};

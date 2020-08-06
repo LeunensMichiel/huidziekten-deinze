@@ -1,0 +1,57 @@
+import React, { useState } from "react"
+import PropTypes from "prop-types"
+import { css } from "@emotion/core"
+import Navbar from "./navigation/navbar"
+
+const mainCss = css`
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: minmax(16px, 1fr) repeat(12, minmax(24px, 95px)) minmax(
+      16px,
+      1fr
+    );
+  flex: 1 1 auto;
+  padding-top: 100px;
+  overflow-x: hidden;
+
+  @media (max-width: 767px) {
+    padding-top: 72px;
+  }
+`
+
+const IsIE = () => {
+  if (typeof window !== `undefined`) {
+    return window.navigator.userAgent.match(/(MSIE|Trident)/)
+  }
+}
+const Layout = ({ children }) => {
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
+  if (IsIE()) {
+    alert(
+      "Internet Explorer is oud en wordt niet meer ondersteund. Chiroitterbeek.be zal hier niet goed op draaien. Gelieve een moderne browser te downloaden zoals Google Chrome of Firefox"
+    )
+    window.open("https://www.google.com/intl/nl/chrome/")
+  }
+  return (
+    <>
+      <Navbar
+        show={sideDrawerOpen}
+        hamburgerClickHandler={() => {
+          setSideDrawerOpen(!sideDrawerOpen)
+          document.getElementById("hamburger").classList.toggle("is-active")
+        }}
+      />
+      <main css={mainCss} aria-hidden={sideDrawerOpen}>
+        {children}
+      </main>
+      {/* <Footer /> */}
+    </>
+  )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
