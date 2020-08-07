@@ -63,6 +63,9 @@ export const BottomFooter = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: ${p => p.theme.space[7]};
+    span {
+      margin-bottom: ${p => p.theme.space[0]};
+    }
   }
 
   @media ${p => p.theme.mq.tablet} {

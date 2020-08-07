@@ -28,6 +28,7 @@ const GlobalStyles = css`
 
   #gatsby-focus-wrapper {
     min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }

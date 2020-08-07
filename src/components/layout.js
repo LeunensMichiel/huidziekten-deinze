@@ -6,15 +6,12 @@ import Footer from "./footer/footer"
 
 const mainCss = css`
   width: 100%;
-  min-height: 100%;
   display: grid;
   grid-template-columns: minmax(16px, 1fr) repeat(12, minmax(24px, 95px)) minmax(
       16px,
       1fr
     );
   flex: 1 1 auto;
-  padding-top: 100px;
-  overflow-x: hidden;
 
   @media (max-width: 767px) {
     padding-top: 72px;
