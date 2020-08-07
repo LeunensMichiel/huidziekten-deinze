@@ -49,7 +49,8 @@ const GlobalStyles = css`
       color: ${huidziektenTheme.colors.accentRich};
       font-weight: 700;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       color: ${huidziektenTheme.colors.accent};
       transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }

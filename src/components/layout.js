@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 import Navbar from "./navigation/navbar"
+import Footer from "./footer/footer"
 
 const mainCss = css`
   width: 100%;
@@ -45,7 +46,7 @@ const Layout = ({ children }) => {
       <main css={mainCss} aria-hidden={sideDrawerOpen}>
         {children}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
