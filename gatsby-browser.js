@@ -72,6 +72,80 @@ const GlobalStyles = css`
     -moz-osx-font-smoothing: inherit;
     -webkit-appearance: none;
   }
+
+  .ReactModal__Content {
+    padding: ${huidziektenTheme.space[6]} !important;
+    border-radius: ${huidziektenTheme.borderRadius} !important;
+    box-shadow: ${huidziektenTheme.shadows.container};
+    transform: translate(-50%, 50%);
+    transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+    h3 {
+      font-family: ${huidziektenTheme.fonts.heading};
+      font-size: ${huidziektenTheme.fontSizes[3]};
+      margin-bottom: ${huidziektenTheme.space[4]};
+    }
+    ul {
+      padding-left: ${huidziektenTheme.space[4]};
+    }
+    b {
+      color: ${huidziektenTheme.colors.accentRich};
+    }
+    ol > li:not(:last-of-type) {
+      margin-bottom: ${huidziektenTheme.space[2]};
+    }
+    li {
+      line-height: ${huidziektenTheme.lineHeights.body};
+    }
+    svg {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+    }
+  }
+  .ReactModal__Content--after-open {
+    transform: translate(-50%, -50%);
+  }
+  .ReactModal__Content--before-close {
+    transform: translate(-50%, 50%);
+  }
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+
+  @media ${huidziektenTheme.mq.mobileM} {
+    .ReactModal__Content {
+      padding: ${huidziektenTheme.space[4]} !important;
+      margin-top: 20% !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin-right: unset !important;
+      transform: translate(0, 50%);
+
+      h3 {
+        font-size: ${huidziektenTheme.fontSizes[2]};
+      }
+      svg {
+        top: 12px;
+        right: 12px;
+      }
+    }
+    .ReactModal__Content--after-open {
+      transform: translate(0, -50%);
+    }
+    .ReactModal__Content--before-close {
+      transform: translate(0, 50%);
+    }
+  }
 `
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={huidziektenTheme}>

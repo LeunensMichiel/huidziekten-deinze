@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 import Navbar from "./navigation/navbar"
 import Footer from "./footer/footer"
+import Banner from "./notification/banner"
 
 const mainCss = css`
   width: 100%;
@@ -12,10 +13,6 @@ const mainCss = css`
       1fr
     );
   flex: 1 1 auto;
-
-  @media (max-width: 767px) {
-    padding-top: 72px;
-  }
 `
 
 const IsIE = () => {
@@ -33,6 +30,7 @@ const Layout = ({ children }) => {
   }
   return (
     <>
+      <Banner />
       <Navbar
         show={sideDrawerOpen}
         hamburgerClickHandler={() => {
