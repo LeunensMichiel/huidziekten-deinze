@@ -102,6 +102,19 @@ const GlobalStyles = css`
       right: 24px;
       cursor: pointer;
     }
+    .team__info {
+      display: flex;
+    }
+    .team__text {
+      flex: 1;
+      white-space: pre-wrap;
+    }
+    .team__item--imageModal {
+      flex: 1;
+      max-height: 500px;
+      margin-left: ${huidziektenTheme.space[4]};
+      overflow: hidden;
+    }
   }
   .ReactModal__Content--after-open {
     transform: translate(-50%, -50%);
@@ -134,9 +147,20 @@ const GlobalStyles = css`
       h3 {
         font-size: ${huidziektenTheme.fontSizes[2]};
       }
+      p {
+        font-size: ${huidziektenTheme.fontSizes[1]};
+        margin-bottom: ${huidziektenTheme.space[2]};
+      }
       svg {
         top: 12px;
         right: 12px;
+      }
+      .team__info {
+        flex-direction: column;
+      }
+      .team__item--imageModal {
+        margin-left: 0;
+        max-height: 300px;
       }
     }
     .ReactModal__Content--after-open {
