@@ -1,6 +1,6 @@
 import React from "react"
 import { TreatmentImage, TreatmentWrapper } from "./treatmentStyles"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Question from "../../assets/icons/question.svg"
@@ -22,6 +22,7 @@ const Treatment = () => {
         <Img
           alt="abstracte foto van huid"
           className="header__image"
+          objectPosition="50% 0%"
           fluid={data.header.childImageSharp.fluid}
         />
         <h1>Behandelingen</h1>

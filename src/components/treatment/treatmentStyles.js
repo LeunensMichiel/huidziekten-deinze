@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 export const TreatmentImage = styled.figure`
   grid-column: 2 / span 12;
   height: 240px;
-  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
