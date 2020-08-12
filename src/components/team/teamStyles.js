@@ -8,7 +8,7 @@ export const TeamWrapper = styled.div`
   h1 {
     font-size: ${p => p.theme.fontSizes[4]};
     font-family: ${p => p.theme.fonts.heading};
-    margin-bottom: ${p => p.theme.space[5]};
+    margin-bottom: ${p => p.theme.space[6]};
   }
 
   em {

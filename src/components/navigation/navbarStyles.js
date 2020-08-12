@@ -5,6 +5,7 @@ export const NavWrapper = styled.header`
   width: 100%;
   height: 120px;
   display: grid;
+  flex-shrink: 0;
   grid-template-columns: minmax(16px, 1fr) repeat(12, minmax(24px, 95px)) minmax(
       16px,
       1fr
