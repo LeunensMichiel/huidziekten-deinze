@@ -25,6 +25,7 @@ export const TeamWrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
     cursor: pointer;
     h2 {
       font-family: ${p => p.theme.fonts.heading};
@@ -40,11 +41,14 @@ export const TeamWrapper = styled.div`
     &:hover,
     &:focus {
       .team__item--imagewrapper {
+        border-radius: 100%;
         b {
           opacity: 1;
         }
       }
       .team__item--image {
+        border-radius: 100%;
+
         img {
           filter: blur(10px);
         }
@@ -59,6 +63,7 @@ export const TeamWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     b {
       font-size: ${p => p.theme.fontSizes[1]};
       color: ${p => p.theme.colors.white};
@@ -77,6 +82,7 @@ export const TeamWrapper = styled.div`
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    overflow: hidden;
     &:after {
       content: "";
       position: absolute;
@@ -88,15 +94,19 @@ export const TeamWrapper = styled.div`
       right: 0;
       bottom: 0;
       transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      overflow: hidden;
+      border-radius: 100%;
     }
     img {
       filter: blur(0);
-      transition: filter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }
   }
 
   @media ${p => p.theme.mq.tablet} {
     grid-column: 2 / span 12;
+    margin-top: ${p => p.theme.space[5]};
+    margin-bottom: ${p => p.theme.space[5]};
+
     .team__item--image {
       width: 180px;
       height: 180px;
