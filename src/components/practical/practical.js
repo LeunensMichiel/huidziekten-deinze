@@ -8,9 +8,9 @@ const Practical = () => {
   const [viewport, setViewport] = useState({
     width: "100%",
     height: "100%",
-    latitude: 50.976522,
-    longitude: 3.526565,
-    zoom: 17.27,
+    latitude: 50.976323,
+    longitude: 3.526634,
+    zoom: 17,
   })
   return (
     <>
