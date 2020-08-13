@@ -1,11 +1,14 @@
 import React from "react"
 import { PraktischWrapper, Title } from "./practicalStyles"
 
-const Appointment = () => {
+const Practical = () => {
   return (
     <>
       <Title>Bereikbaarheid</Title>
       <PraktischWrapper>
+        <div className="appointment__group map">
+
+        </div>
         <div className="appointment__group">
           <h2>Adres</h2>
           <a
@@ -103,4 +106,4 @@ const Appointment = () => {
   )
 }
 
-export default Appointment
+export default Practical

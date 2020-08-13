@@ -42,7 +42,6 @@ export const PraktischWrapper = styled.secion`
 
     &.map--ul {
       li {
-        height: 19px;
         margin: ${p => p.theme.space[1]} 0;
         list-style: none;
         padding-left: ${p => p.theme.space[5]};
@@ -87,5 +86,8 @@ export const PraktischWrapper = styled.secion`
   }
   .col--time {
     background: ${p => p.theme.colors.accent};
+  }
+  .map {
+    background: ${p => p.theme.colors.accentLight};
   }
 `

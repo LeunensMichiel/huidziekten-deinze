@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import Appointment from "../components/practical/appointment"
+import Practical from "../components/practical/practical"
 
 const PraktischPage = () => {
   return (
     <Layout>
-      <Appointment />
+      <Practical />
     </Layout>
   )
 }
