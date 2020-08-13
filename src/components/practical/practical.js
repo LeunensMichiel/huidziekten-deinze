@@ -1,13 +1,38 @@
-import React from "react"
+import React, { useState } from "react"
+import ReactMapGL, { Marker, FullscreenControl } from "react-map-gl"
+import "mapbox-gl/dist/mapbox-gl.css"
+
 import { PraktischWrapper, Title } from "./practicalStyles"
 
 const Practical = () => {
+  const [viewport, setViewport] = useState({
+    width: "100%",
+    height: "100%",
+    latitude: 50.976522,
+    longitude: 3.526565,
+    zoom: 17.27,
+  })
   return (
     <>
       <Title>Bereikbaarheid</Title>
       <PraktischWrapper>
         <div className="appointment__group map">
-
+          <ReactMapGL
+            {...viewport}
+            mapboxApiAccessToken={`${process.env.GATSBY_TOKEN_MAPBOX}`}
+            mapStyle="mapbox://styles/michielleunens/ckdswxgee1da519ocdl7p4ute"
+            onViewportChange={nextViewport => setViewport(nextViewport)}
+          >
+            <div style={{ position: "absolute", right: 12, top: 12 }}>
+              <FullscreenControl />
+            </div>
+            <Marker latitude={50.97618} longitude={3.526176}>
+              <div className="map__marker--belfius">Belfius</div>
+            </Marker>
+            <Marker latitude={50.976303} longitude={3.526223}>
+              <div className="map__marker--arrow">{"->"}</div>
+            </Marker>
+          </ReactMapGL>
         </div>
         <div className="appointment__group">
           <h2>Adres</h2>
