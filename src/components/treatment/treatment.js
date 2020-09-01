@@ -32,13 +32,6 @@ const Treatment = () => {
         <div className="treatment__item--container">
           <div className="treatment__item">
             <p>Psoriasis</p>
-            <Question />
-            <div className="treatment__item--desc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-                egestas adipiscing sollicitudin phasellus.
-              </p>
-            </div>
           </div>
           <div className="treatment__item">
             <p>Eczeem</p>
@@ -51,8 +44,9 @@ const Treatment = () => {
             <Question />
             <div className="treatment__item--desc">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-                egestas adipiscing sollicitudin phasellus.
+                Hierbij wordt een handmicroscoop gebruikt, waarbij dieper
+                gelegen structuren en kleuren zichtbaar worden en waardoor o.a.
+                huidkankers sneller kunnen herkend worden.
               </p>
             </div>
           </div>
@@ -64,43 +58,36 @@ const Treatment = () => {
         <div className="treatment__item--container">
           <div className="treatment__item">
             <p>Haarziekten</p>
-            <Question />
-            <div className="treatment__item--desc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-                egestas adipiscing sollicitudin phasellus.
-              </p>
-            </div>
           </div>
           <div className="treatment__item">
             <p>Nagelziekten</p>
-            <Question />
-            <div className="treatment__item--desc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-                egestas adipiscing sollicitudin phasellus.
-              </p>
-            </div>
           </div>
         </div>
         <h2>Contactallergietesten</h2>
         <div className="treatment__item--container">
           <div className="treatment__item">
-            <p>Lorem Ipsum</p>
+            <p>Contactallergie</p>
           </div>
         </div>
         <h2>Lichttherapie</h2>
         <div className="treatment__item--container">
           <div className="treatment__item">
             <p>PUVA-therapie</p>
+            <Question />
+            <div className="treatment__item--desc">
+              <p>
+                O.a. voor psoriasis, eczeem, zonneallergie, vitiligo en lichen
+                ruber
+              </p>
+            </div>
           </div>
           <div className="treatment__item">
             <p>UVB-therapie</p>
             <Question />
             <div className="treatment__item--desc">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-                egestas adipiscing sollicitudin phasellus.
+                O.a. voor psoriasis, eczeem, zonneallergie, vitiligo en lichen
+                ruber
               </p>
             </div>
           </div>
@@ -109,19 +96,29 @@ const Treatment = () => {
         <div className="treatment__item--container">
           <div className="treatment__item">
             <p>Dermatochirorgie</p>
+            <Question />
+            <div className="treatment__item--desc">
+              <p>Verwijdering moedervlekken, huidtumoren, cysten…</p>
+            </div>
           </div>
           <div className="treatment__item">
             <p>Rimpelbehandeling</p>
             <Question />
             <div className="treatment__item--desc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-                egestas adipiscing sollicitudin phasellus.
-              </p>
+              <p>Door middel van botulinetoxine en/of fillers</p>
             </div>
           </div>
           <div className="treatment__item">
             <p>Laserbehandeling</p>
+            <Question />
+            <div className="treatment__item--desc">
+              <p>
+                In onze praktijk is er een toestel beschikbaar voor de
+                behandeling van couperose, wijnvlekken en overbeharing. Voor
+                andere indicaties wordt er samengewerkt met het Cutaan Laser
+                Centrum in Aalter.
+              </p>
+            </div>
           </div>
         </div>
       </TreatmentWrapper>
