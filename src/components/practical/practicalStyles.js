@@ -10,7 +10,7 @@ export const Title = styled.h1`
   margin-top: ${p => p.theme.space[5]};
 `
 
-export const PraktischWrapper = styled.secion`
+export const PraktischWrapper = styled.section`
   grid-column: 2 / span 12;
   display: flex;
   margin-top: ${p => p.theme.space[5]};
@@ -117,7 +117,7 @@ export const PraktischWrapper = styled.secion`
   }
   @media ${p => p.theme.mq.mobileM} {
     flex-direction: column;
-    margin-bottom: ${p => p.theme.space[2]};
+    margin-bottom: ${p => p.theme.space[3]};
 
     .map {
       height: 200px;

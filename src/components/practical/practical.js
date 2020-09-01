@@ -86,21 +86,23 @@ const Practical = () => {
               <col className="col--time" />
               <col className="col--time" />
             </colgroup>
-            <tr>
-              <th>Maandag</th>
-              <td>08:30 – 12:00</td>
-              <td>14:00 – 19:00</td>
-            </tr>
-            <tr>
-              <th>Woensdag</th>
-              <td>08:30 – 12:00</td>
-              <td>14:00 – 19:00</td>
-            </tr>
-            <tr>
-              <th>Zaterdag</th>
-              <td>08:30 – 12:00</td>
-              <td>14:00 – 17:30</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Maandag</th>
+                <td>08:30 – 12:00</td>
+                <td>14:00 – 19:00</td>
+              </tr>
+              <tr>
+                <th>Woensdag</th>
+                <td>08:30 – 12:00</td>
+                <td>14:00 – 19:00</td>
+              </tr>
+              <tr>
+                <th>Zaterdag</th>
+                <td>08:30 – 12:00</td>
+                <td>14:00 – 17:30</td>
+              </tr>
+            </tbody>
           </table>
           <p>
             Indien u uw afspraak <b>niet</b> kan nakomen, gelieve deze{" "}
