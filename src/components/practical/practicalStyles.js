@@ -89,7 +89,7 @@ export const PraktischWrapper = styled.section`
   }
   .map {
     background: ${p => p.theme.colors.accentLight};
-
+    height: 360px;
     .map__marker--belfius,
     .map__marker--arrow {
       background: ${p => p.theme.colors.accentRich};

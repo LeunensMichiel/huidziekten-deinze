@@ -1,24 +1,22 @@
 import React from "react"
-import { TreatmentImage, TreatmentWrapper } from "./treatmentStyles"
-import Img from "gatsby-image/withIEPolyfill"
-import { useStaticQuery, graphql } from "gatsby"
+import { TreatmentWrapper } from "./treatmentStyles"
 
 import Question from "../../assets/icons/question.svg"
 const Treatment = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      header: file(relativePath: { eq: "skin.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1440, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     header: file(relativePath: { eq: "skin.jpg" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 1440, quality: 80) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <>
-      <TreatmentImage>
+      {/* <TreatmentImage>
         <Img
           alt="abstracte foto van huid"
           className="header__image"
@@ -26,7 +24,7 @@ const Treatment = () => {
           fluid={data.header.childImageSharp.fluid}
         />
         <h1>Behandelingen</h1>
-      </TreatmentImage>
+      </TreatmentImage> */}
       <TreatmentWrapper>
         <h2>Alle huidziekten</h2>
         <div className="treatment__item--container">
@@ -95,7 +93,7 @@ const Treatment = () => {
         <h2>Chirurgische en cosmetische huidproblemen</h2>
         <div className="treatment__item--container">
           <div className="treatment__item">
-            <p>Dermatochirorgie</p>
+            <p>Dermatochirurgie</p>
             <Question />
             <div className="treatment__item--desc">
               <p>Verwijdering moedervlekken, huidtumoren, cysten…</p>

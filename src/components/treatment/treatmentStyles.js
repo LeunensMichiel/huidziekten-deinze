@@ -16,7 +16,7 @@ export const TreatmentImage = styled.figure`
     position: absolute;
     z-index: 5;
   }
-  .header__image {
+  /* .header__image {
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -43,7 +43,7 @@ export const TreatmentImage = styled.figure`
       width: 40%;
       height: 170px;
     }
-  }
+  } */
 `
 
 export const TreatmentWrapper = styled.div`
@@ -71,7 +71,7 @@ export const TreatmentWrapper = styled.div`
     background: ${p => p.theme.colors.accentLight};
     border-radius: ${p => p.theme.borderRadius};
     position: relative;
-    z-index: 15;
+    z-index: 150;
 
     svg {
       cursor: help;

@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import ReactMapGL, { Marker, FullscreenControl } from "react-map-gl"
 import "mapbox-gl/dist/mapbox-gl.css"
+import Img from "gatsby-image/withIEPolyfill"
+import { useStaticQuery, graphql } from "gatsby"
 
 import { PraktischWrapper, Title } from "./practicalStyles"
 
@@ -12,27 +14,28 @@ const Practical = () => {
     longitude: 3.526634,
     zoom: 17,
   })
+  const data = useStaticQuery(graphql`
+    query {
+      header: file(relativePath: { eq: "praktijk.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1440, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
   return (
     <>
       <Title>Bereikbaarheid</Title>
       <PraktischWrapper>
-        <div className="appointment__group map">
-          <ReactMapGL
-            {...viewport}
-            mapboxApiAccessToken={`${process.env.GATSBY_TOKEN_MAPBOX}`}
-            mapStyle="mapbox://styles/michielleunens/ckdswxgee1da519ocdl7p4ute"
-            onViewportChange={nextViewport => setViewport(nextViewport)}
-          >
-            <div style={{ position: "absolute", right: 12, top: 12 }}>
-              <FullscreenControl />
-            </div>
-            <Marker latitude={50.97618} longitude={3.526176}>
-              <div className="map__marker--belfius">Belfius</div>
-            </Marker>
-            <Marker latitude={50.976303} longitude={3.526223}>
-              <div className="map__marker--arrow">{"->"}</div>
-            </Marker>
-          </ReactMapGL>
+        <div className="appointment__group">
+          <Img
+            alt="Foto van de praktijk langs de buitenkant"
+            className="header__image"
+            objectPosition="50% 0%"
+            fluid={data.header.childImageSharp.fluid}
+          />
         </div>
         <div className="appointment__group">
           <h2>Adres</h2>
@@ -72,7 +75,27 @@ const Practical = () => {
           </ul>
         </div>
       </PraktischWrapper>
-      <Title>Afspraak</Title>
+      <PraktischWrapper>
+        <div className="appointment__group map">
+          <ReactMapGL
+            {...viewport}
+            mapboxApiAccessToken={`${process.env.GATSBY_TOKEN_MAPBOX}`}
+            mapStyle="mapbox://styles/michielleunens/ckdswxgee1da519ocdl7p4ute"
+            onViewportChange={nextViewport => setViewport(nextViewport)}
+          >
+            <div style={{ position: "absolute", right: 12, top: 12 }}>
+              <FullscreenControl />
+            </div>
+            <Marker latitude={50.97618} longitude={3.526176}>
+              <div className="map__marker--belfius">Belfius</div>
+            </Marker>
+            <Marker latitude={50.976303} longitude={3.526223}>
+              <div className="map__marker--arrow">{"->"}</div>
+            </Marker>
+          </ReactMapGL>
+        </div>
+      </PraktischWrapper>
+      <Title id="afspraak">Afspraak</Title>
       <PraktischWrapper>
         <div className="appointment__group">
           <h2>Hoe maak ik een afspraak?</h2>

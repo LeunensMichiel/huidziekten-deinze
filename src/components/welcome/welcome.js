@@ -27,14 +27,14 @@ const Welcome = () => {
       <WelcomeWrapper>
         <h1>Welkom,</h1>
         <p>
-          Huidziektendeinze is een <b>team van dermatologen</b>, gelegen in het
-          hartje van Deinze.
+          Met deze site willen we u op de hoogte brengen van de werking van onze
+          praktijk.
         </p>
         <p>
-          Turpis mattis ultrices nulla lacinia in. Dui condimentum a leo tortor,
-          leo lectus ante eget sed. Arcu venenatis amet scelerisque tincidunt.
+          U kan er informatie vinden over wie we zijn, wat we doen, waar en
+          wanneer we raadplegingen doen en hoe u een <b>afspraak</b> kan maken.
         </p>
-        <Link to="/praktisch/">Maak een afspraak</Link>
+        <Link to="/praktisch#afspraak">Maak een afspraak</Link>
       </WelcomeWrapper>
     </>
   )
