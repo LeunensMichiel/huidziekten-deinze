@@ -86,7 +86,7 @@ const Team = () => {
     <>
       <TeamWrapper>
         <h1>
-          Het <em>team</em> achter Huidziekten Deinze
+          Huidziekten <em>Deinze</em>
         </h1>
         <div className="team__row">
           <div
@@ -108,7 +108,7 @@ const Team = () => {
               </b>
             </div>
             <h2>Dr. Isabel Blockeel</h2>
-            <span>Bedrijfsfunctie</span>
+            {/* <span>Bedrijfsfunctie</span> */}
           </div>
           <div
             className="team__item"
@@ -129,7 +129,7 @@ const Team = () => {
               </b>
             </div>
             <h2>Dr. Lies Vanquickenborne</h2>
-            <span>Bedrijfsfunctie</span>
+            {/* <span>Bedrijfsfunctie</span> */}
           </div>
           <div
             className="team__item"
@@ -150,7 +150,7 @@ const Team = () => {
               </b>
             </div>
             <h2>Sandra Dubois</h2>
-            <span>Bedrijfsfunctie</span>
+            {/* <span>Bedrijfsfunctie</span> */}
           </div>
         </div>
       </TeamWrapper>
