@@ -53,7 +53,7 @@ const Practical = () => {
                 <td>14:00 – 19:00</td>
               </tr>
               <tr>
-                <th>Zaterdag</th>
+                <th>Vrijdag</th>
                 <td>08:30 – 12:00</td>
                 <td>14:00 – 17:30</td>
               </tr>
