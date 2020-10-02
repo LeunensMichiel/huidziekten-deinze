@@ -27,6 +27,63 @@ const Practical = () => {
   `)
   return (
     <>
+      <Title id="afspraak">Afspraak</Title>
+      <PraktischWrapper>
+        <div className="appointment__group">
+          <h2>Hoe maak ik een afspraak?</h2>
+          <p>
+            U kan enkel <b>telefonisch</b> een afspraak maken op het nummer{" "}
+            <b>09/3861610</b> op
+          </p>
+          <table>
+            <colgroup>
+              <col className="col--header" />
+              <col className="col--time" />
+              <col className="col--time" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>Maandag</th>
+                <td>08:30 – 12:00</td>
+                <td>14:00 – 19:00</td>
+              </tr>
+              <tr>
+                <th>Woensdag</th>
+                <td>08:30 – 12:00</td>
+                <td>14:00 – 19:00</td>
+              </tr>
+              <tr>
+                <th>Zaterdag</th>
+                <td>08:30 – 12:00</td>
+                <td>14:00 – 17:30</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Indien u uw afspraak <b>niet</b> kan nakomen, gelieve deze{" "}
+            <b>tijdig</b> te annuleren (telefonisch of via mail), zo geeft u
+            iemand anders de kans om op dat moment te consulteren.
+          </p>
+          <p>
+            Indien u met 2 personen komt, gelieve dan 2 opeenvolgende afspraken
+            te maken.
+          </p>
+        </div>
+        <div className="appointment__group">
+          <h2>Wanneer kan u komen?</h2>
+          <p>
+            De raadplegingen gaan door op maandag, dinsdag, woensdag en vrijdag.
+          </p>
+          <p>Hou rekening met een gemiddelde wachttijd van 6 à 8 weken.</p>
+          <h2>Wat breng ik mee?</h2>
+          <ul>
+            <li>Identiteitskaart</li>
+            <li>Medicatielijst</li>
+            <li>Reeds gebruikte behandelingen</li>
+            <li>Vignet van de mutualiteit (kleefbriefje)</li>
+          </ul>
+        </div>
+      </PraktischWrapper>
       <Title>Bereikbaarheid</Title>
       <PraktischWrapper>
         <div className="appointment__group">
@@ -93,63 +150,6 @@ const Practical = () => {
               <div className="map__marker--arrow">{"->"}</div>
             </Marker>
           </ReactMapGL>
-        </div>
-      </PraktischWrapper>
-      <Title id="afspraak">Afspraak</Title>
-      <PraktischWrapper>
-        <div className="appointment__group">
-          <h2>Hoe maak ik een afspraak?</h2>
-          <p>
-            U kan enkel <b>telefonisch</b> een afspraak maken op het nummer{" "}
-            <b>09/3861610</b> op
-          </p>
-          <table>
-            <colgroup>
-              <col className="col--header" />
-              <col className="col--time" />
-              <col className="col--time" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <th>Maandag</th>
-                <td>08:30 – 12:00</td>
-                <td>14:00 – 19:00</td>
-              </tr>
-              <tr>
-                <th>Woensdag</th>
-                <td>08:30 – 12:00</td>
-                <td>14:00 – 19:00</td>
-              </tr>
-              <tr>
-                <th>Zaterdag</th>
-                <td>08:30 – 12:00</td>
-                <td>14:00 – 17:30</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>
-            Indien u uw afspraak <b>niet</b> kan nakomen, gelieve deze{" "}
-            <b>tijdig</b> te annuleren (telefonisch of via mail), zo geeft u
-            iemand anders de kans om op dat moment te consulteren.
-          </p>
-          <p>
-            Indien u met 2 personen komt, gelieve dan 2 opeenvolgende afspraken
-            te maken.
-          </p>
-        </div>
-        <div className="appointment__group">
-          <h2>Wanneer kan u komen?</h2>
-          <p>
-            De raadplegingen gaan door op maandag, dinsdag, woensdag en vrijdag.
-          </p>
-          <p>Hou rekening met een gemiddelde wachttijd van 6 à 8 weken.</p>
-          <h2>Wat breng ik mee?</h2>
-          <ul>
-            <li>Identiteitskaart</li>
-            <li>Medicatielijst</li>
-            <li>Reeds gebruikte behandelingen</li>
-            <li>Vignet van de mutualiteit (kleefbriefje)</li>
-          </ul>
         </div>
       </PraktischWrapper>
     </>
