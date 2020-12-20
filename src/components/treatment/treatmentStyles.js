@@ -16,34 +16,6 @@ export const TreatmentImage = styled.figure`
     position: absolute;
     z-index: 5;
   }
-  /* .header__image {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-
-    &:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      opacity: 0.33;
-      background: ${p => p.theme.colors.accent};
-      bottom: 0;
-      left: 0;
-      width: 60%;
-      height: 36px;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: 2;
-      opacity: 0.33;
-      background: ${p => p.theme.colors.accent};
-      bottom: 0;
-      left: 0;
-      width: 40%;
-      height: 170px;
-    }
-  } */
 `
 
 export const TreatmentWrapper = styled.div`
@@ -71,7 +43,7 @@ export const TreatmentWrapper = styled.div`
     background: ${p => p.theme.colors.accentLight};
     border-radius: ${p => p.theme.borderRadius};
     position: relative;
-    z-index: 150;
+    z-index: 99;
 
     svg {
       cursor: help;
