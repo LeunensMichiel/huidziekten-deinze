@@ -74,7 +74,7 @@ const Practical = () => {
           <p>
             De raadplegingen gaan door op maandag, dinsdag, woensdag en vrijdag.
           </p>
-          <p>Hou rekening met een gemiddelde wachttijd van 6 tot 12 weken.</p>
+          <p>Hou rekening met een gemiddelde wachttijd minimum 12 weken.</p>
           <h2>Wat breng ik mee?</h2>
           <ul>
             <li>Identiteitskaart</li>
