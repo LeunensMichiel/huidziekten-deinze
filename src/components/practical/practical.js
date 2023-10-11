@@ -32,8 +32,17 @@ const Practical = () => {
         <div className="appointment__group">
           <h2>Hoe maak ik een afspraak?</h2>
           <p>
-            U kan enkel <b>telefonisch</b> een afspraak maken op het nummer{" "}
-            <b>09/3861610</b> op
+            U kan <b>telefonisch</b> en{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://onlinebooking.myorganizer.online?gp=74450f20-9812-4a5a-b419-9950d5277ceb&language=bmxfQkU%3D&role=OA%3D%3D"
+            >
+              online
+            </a>{" "}
+            een afspraak maken.
+            <br />
+            Telefonisch kan u ons bereiken op <b>09/3861610</b>
           </p>
           <table>
             <colgroup>
@@ -104,7 +113,6 @@ const Practical = () => {
             Volhardingslaan 72/12
             <br />
             9800 Deinze, België
-            <small>-Klik om te openen in Google Maps-</small>
           </a>
           <h2>Instructies</h2>
           <p>
@@ -120,7 +128,7 @@ const Practical = () => {
           <ul className="map--ul">
             <li className="map--ul--car">
               Parkeergelegenheid op de Sint-Martinusparking of langs de
-              volhardingslaan.
+              Volhardingslaan.
             </li>
             <li className="map--ul--bus">
               De praktijk bevindt zich op wandelafstand van het station. Vlakbij

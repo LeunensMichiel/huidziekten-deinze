@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
   }
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <Navbar
         show={sideDrawerOpen}
         hamburgerClickHandler={() => {

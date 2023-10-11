@@ -64,7 +64,7 @@ const Team = () => {
   ]
   const descriptions = [
     "Isabel volbracht haar opleiding geneeskunde aan de KULeuven in 1995 en specialiseerde zich daarna in de dermato-venereologie aan de Universiteit Leuven.\n\nDr. Isabel Blockeel is sinds 1999 werkzaam in Deinze en is ook verbonden aan het Cutaan Laser Centrum in Aalter.",
-    "Dr. Lies Vanquickenborne studeerde geneeskunde aan de KU Leuven en behaalde haar diploma in 1994. Nadien specialiseerde ze zich in de dermatologie met opleidingen in  AZ Sint Lucas Brugge  en UZ Leuven. Ze werkt nog steeds in AZ Sint Lucas Brugge gedurende 1 ½ dag/ week. \n\nDaarnaast werkt ze sinds 2005 samen met Dr. Blockeel in Deinze.",
+    "Dr. Lies Vanquickenborne studeerde geneeskunde aan de KU Leuven en behaalde haar diploma in 1994. Nadien specialiseerde ze zich in de dermatologie met opleidingen in AZ Sint Lucas Brugge en UZ Leuven. Ze werkte in het AZ Sint Lucas Brugge gedurende 23 jaar en is daar gestopt in juni 2023. \n\nDaarnaast werkt ze sinds 2005 samen met Dr. Blockeel in Deinze.",
     "Sandra Dubois is verpleegkundige en is sinds 2019 in onze praktijk werkzaam. Ze heeft voordien gewerkt op de dienst pediatrie in het Sint-Vincentiusziekenhuis in Deinze. Ze zal uw contactpersoon zijn als u een afspraak wenst te maken.\n\nZe staat in voor de praktische organisatie, assistentie bij chirurgische ingrepen, wondzorg, verwijdering van hechtingen…",
   ]
   const images = [

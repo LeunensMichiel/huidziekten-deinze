@@ -58,9 +58,23 @@ export const PraktischWrapper = styled.section`
       }
     }
   }
-  li,
+  li {
+    line-height: ${p => p.theme.lineHeights.body};
+  }
   a {
     line-height: ${p => p.theme.lineHeights.body};
+    color: ${p => p.theme.colors.accentRich};
+    transition: color 0.4s ease;
+    text-decoration: underline;
+    font-weight: 700;
+    &.active {
+      color: ${p => p.theme.colors.accent};
+    }
+    &:hover,
+    &:focus {
+      color: ${p => p.theme.colors.accent};
+      transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
   }
   small {
     display: block;
@@ -73,6 +87,8 @@ export const PraktischWrapper = styled.section`
       padding: ${p => p.theme.space[2]} ${p => p.theme.space[3]};
       text-align: left;
       vertical-align: center;
+      border-radius: 2px;
+      overflow: hidden;
     }
     table {
       border-spacing: ${p => p.theme.space[0]};
