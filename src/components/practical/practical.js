@@ -36,7 +36,7 @@ const Practical = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://onlinebooking.myorganizer.online?gp=74450f20-9812-4a5a-b419-9950d5277ceb&language=bmxfQkU%3D&role=OA%3D%3D"
+              href="https://agenda.mediris.be/appointments?agenda=8c684bf3-76e9-415b-b52d-575c7fbd9feb"
             >
               online
             </a>{" "}
