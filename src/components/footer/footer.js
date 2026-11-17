@@ -7,7 +7,16 @@ const Footer = () => {
     <FooterWrapper>
       <UpperFooter>
         <h3>Huidziekten Deinze</h3>
-        <span> © {new Date().getFullYear()} Huidziekten Deinze</span>
+        <span>
+          © {new Date().getFullYear()} Huidziekten Deinze · Webdesign door{" "}
+          <a
+            href="https://leunes.studio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Leunes Studios
+          </a>
+        </span>
       </UpperFooter>
       <BottomFooter>
         <div className="footer__block">

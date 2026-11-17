@@ -51,6 +51,13 @@ export const UpperFooter = styled.div`
   span {
     font-size: ${p => p.theme.fontSizes[0]};
   }
+  a {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 `
 
 export const BottomFooter = styled.div`
